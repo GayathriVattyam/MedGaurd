@@ -1,0 +1,46 @@
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Background */
+body{
+  background: linear-gradient(135deg,#0f172a,#1e293b);
+  color:white;
+}
+
+/* Links */
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+/* Buttons */
+button{
+  padding:10px 20px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+/* Card Style */
+.card{
+  background:white;
+  color:black;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.15);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+}
