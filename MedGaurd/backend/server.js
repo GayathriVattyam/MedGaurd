@@ -693,6 +693,14 @@ app.post("/api/debug/clear-all", async (req, res) => {
     });
   }
 });
+// ROOT ROUTE
+app.get("/", (req, res) => {
+  res.json({
+    success: true,
+    message: "MedGuard backend is running"
+  });
+});
+
 
 // ============================================
 // ERROR HANDLING
