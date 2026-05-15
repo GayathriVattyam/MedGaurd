@@ -695,10 +695,44 @@ app.post("/api/debug/clear-all", async (req, res) => {
 });
 // ROOT ROUTE
 app.get("/", (req, res) => {
-  res.json({
-    success: true,
-    message: "MedGuard backend is running"
-  });
+  res.send(`
+    <html>
+      <head>
+        <title>MedGuard Backend</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+          }
+          .box {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+          }
+          h1 {
+            color: #2ecc71;
+          }
+          p {
+            color: #555;
+            font-size: 18px;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="box">
+          <h1>✅ MedGuard Backend Running</h1>
+          <p>Server deployed successfully on Render</p>
+        </div>
+      </body>
+    </html>
+  `);
 });
 
 
